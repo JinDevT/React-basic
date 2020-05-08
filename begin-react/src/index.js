@@ -8,7 +8,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root') // public index.html의 root안에 들어가는거다.
+  document.getElementById('root') 
 );
 
 // If you want your app to work offline and load faster, you can change
