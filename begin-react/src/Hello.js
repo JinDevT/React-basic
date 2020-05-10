@@ -1,19 +1,13 @@
 import React from 'react';
 
-function Hello({ color, name, isSpecial}) {
+function Hello({ color, name }) {
     return (
-        <div style={{
-            color
-        }}>
-            {isSpecial && <b>*</b>}
-            {name}야 반가워
-        </div>
+      <div style={{ color }}>{name}님 반가워요!</div>
     );
 }
 
-// 기본값 설정
 Hello.defaultProps = {
-    name: '이름없음'
+    name: "이름없음"
 }
 
 export default Hello; 
