@@ -6,9 +6,11 @@ function Counter() {
 
     const onIncrease = () => {
         // update function
+        console.log('increase button click');
         setNumber(prevNumber => prevNumber + 1);
     };
     const onDecrease = () => {
+        console.log('decrease button click');
         setNumber(prevNumber => prevNumber - 1);
     };
 
