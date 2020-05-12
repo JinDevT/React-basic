@@ -1,11 +1,13 @@
 import React from 'react';
-import Counter from './Counter';
-import CounterClass from './CounterClass';
+import LifeCycle from './LifeCycle';
+//import Counter from './Counter';
+//import CounterClass from './CounterClass';
 
 function App() {
   return (
     // <Counter/>
-    <CounterClass />
+    //<CounterClass />
+    <LifeCycle />
   );
 }
 
