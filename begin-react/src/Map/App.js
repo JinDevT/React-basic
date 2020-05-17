@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import PhoneForm from './components/PhoneForm';
+import PhoneInfoList from './components/PhoneInfoList';
 
 class App extends Component {
-    id = 2 // const, let이 안먹히는 이유
+    id = 2 // const, let이 안먹히는 이유, 
     constructor(props) {
         super(props);
         this.state = {
@@ -22,19 +23,19 @@ class App extends Component {
     }
 
     handleCreate = data => {
+        console.log(data);
         const { information } = this.state;
         this.setState({
             information: information.concat({ id: this.id++, ...data})
         })
     }
     render() {
-        const { information } = this.state;
         return(
             <div>
                 <PhoneForm 
                     onCreate={this.handleCreate}
                 />
-                {JSON.stringify(information)}
+                <PhoneInfoList  data={this.state.information}/>
             </div>
             
         );
